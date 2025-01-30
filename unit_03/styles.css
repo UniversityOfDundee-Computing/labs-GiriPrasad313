@@ -1,47 +1,116 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #333;
-    background-color: #f4f4f4;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #3498db;
-    color: white;
+    background-color: #2c3e50;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
-h2 {
-    font-size: 2rem;
-    color: #2c3e50;
-    margin-top: 20px;
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
-p {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-a {
-    color: #3498db;
+header p a {
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover {
+header p a:hover {
     text-decoration: underline;
 }
 
-/* Icon Styles */
-.fas {
+/* Section Styles */
+section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+section ul li strong {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Font Awesome Icons */
+section ul li i {
     margin-right: 10px;
+    color: #2c3e50;
+}
+
+/* Hobbies Section Icons */
+section#hobbies ul li i {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section ul li {
+        font-size: 1em;
+    }
 }
